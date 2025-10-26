@@ -1,7 +1,7 @@
 name: Deploy Vite app to GitHub Pages
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
@@ -30,6 +30,10 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # 🔹 Denna rad lägger till fallback så att routing fungerar på Pages
+      - name: Add SPA fallback (404 -> index)
+        run: cp dist/index.html dist/404.html
 
       - name: Upload artifact (dist)
         uses: actions/upload-pages-artifact@v3
