@@ -41,7 +41,7 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
       <CardHeader>
         <div className="flex items-start justify-between gap-4">
           <CardTitle className="text-2xl md:text-3xl font-bold leading-tight group-hover:text-primary transition-smooth">
-            {article.title}
+            {article.title_sv ?? article.title}
           </CardTitle>
           <div className="relative">
             <Button
