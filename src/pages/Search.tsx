@@ -26,7 +26,7 @@ const Search = () => {
     const query = searchQuery.toLowerCase();
     return articles.filter(
       (article) =>
-        article.title.toLowerCase().includes(query) ||
+        (article.title_sv ?? article.title).toLowerCase().includes(query) ||
         (article.summary?.toLowerCase() || "").includes(query) ||
         article.tags?.some((tag) => tag.toLowerCase().includes(query))
     );
