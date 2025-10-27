@@ -17,7 +17,7 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
   
   const handleShare = (platform: string) => {
     const encodedUrl = encodeURIComponent(shareUrl);
-    const encodedTitle = encodeURIComponent(article.title);
+    const encodedTitle = encodeURIComponent(article.title_sv ?? article.title);
     
     const shareUrls: Record<string, string> = {
       facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
