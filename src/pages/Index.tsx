@@ -58,12 +58,13 @@ const Index = () => {
             {visibleCount < sortedArticles.length && (
               <div className="flex justify-center mt-8">
                 <Button
-                  onClick={() => setVisibleCount((c) => c + 10)}
-                  variant="outline"
-                  className="hover-scale"
-                >
+                onClick={() => setVisibleCount((c) => c + 10)}
+                variant="outline"
+                 className="hover-scale hover:bg-gray-100 hover:text-gray-900"
+                  >
                   Visa fler artiklar
-                </Button>
+                  </Button>
+
               </div>
             )}
           </>

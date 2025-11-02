@@ -91,3 +91,19 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  /* Neutral accent endast i navbaren */
+  nav {
+    --accent: 220 14% 93%;              /* ljusgrå bakgrund vid hover */
+    --accent-foreground: 222 47% 11%;   /* mörk text på den ljusa bakgrunden */
+  }
+}
+@layer components {
+  /* Neutral accent bara inuti kort (Card) */
+  .bg-card.text-card-foreground {
+    --accent: 220 14% 93%;           /* ljus neutralgrå hover-bakgrund */
+    --accent-foreground: 222 47% 11%;/* mörk text på grå bakgrund */
+  }
+
+}
