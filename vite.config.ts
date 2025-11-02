@@ -5,15 +5,19 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
   server: {
-    host: true,                               // gör att det funkar i Codespaces
-    port: Number(process.env.PORT) || 5173,   // använd PORT från miljön eller fallback
+    host: true,
+    port: Number(process.env.PORT) || 5173,
     strictPort: true,
-    hmr: { clientPort: 443 }                  // fix för hot reload via Codespaces-proxy
+    hmr: { clientPort: 443 },
   },
   preview: {
     host: true,
-    port: Number(process.env.PORT) || 4173
-  }
-})
-
+    port: Number(process.env.PORT) || 4173,
+  },
+});
