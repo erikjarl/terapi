@@ -31,9 +31,9 @@ const Contact = () => {
                   
                   <div className="prose prose-lg mb-6">
                     <p className="text-foreground leading-relaxed">
-                      Har du frågor, förslag eller vill du bidra till Psysum? Jag hör gärna från dig! 
-                      Som psykolog och forskningsentusiast brinner jag för att göra vetenskaplig kunskap 
-                      tillgänglig för alla.
+                      Har du frågor, förslag eller vill du bidra till Sumra? Jag hör gärna från dig! 
+                      ¨
+                
                     </p>
                   </div>
 
@@ -44,7 +44,7 @@ const Contact = () => {
                       onClick={() => window.location.href = "mailto:erik.jarl@psysum.se"}
                     >
                       <Mail size={20} />
-                      erik.jarl@psysum.se
+                      -
                     </Button>
                     
                     <Button
@@ -60,7 +60,7 @@ const Contact = () => {
                   <div className="mt-8 p-4 bg-muted rounded-lg">
                     <p className="text-sm text-foreground">
                       <strong>Svarstid:</strong> Jag strävar efter att svara på alla meddelanden 
-                      inom 48 timmar. För mer brådskande frågor, använd gärna LinkedIn.
+                      inom 48 timmar. 
                     </p>
                   </div>
                 </div>
