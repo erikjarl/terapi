@@ -15,15 +15,15 @@ const Podcast = () => {
               <Headphones size={48} className="text-white" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-              Psysum Podcast
+              Sumra Podcast
             </h2>
           </div>
           
           <Card className="shadow-medium">
             <CardContent className="pt-6">
               <p className="text-lg leading-relaxed text-foreground mb-6">
-                Vill du hellre lyssna på artiklar än att läsa dem? Alla våra artikelsammanfattningar 
-                finns även tillgängliga som podcastavsnitt på Spotify. Perfekt för dig som vill ta 
+                Vill du hellre lyssna på artiklar än att läsa dem? Flera våra artikelsammanfattningar 
+                kommer inom kort finns tillgängliga som podcastavsnitt på Spotify. Perfekt för dig som vill ta 
                 del av den senaste forskningen under promenaden, på gymmet eller på väg till jobbet.
               </p>
 
@@ -44,7 +44,7 @@ const Podcast = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>Professionell inläsning med tydligt fokus på innehållet</span>
+                    <span>Hög kvalitativ inläsning med tydligt fokus på innehållet</span>
                   </li>
                 </ul>
               </div>
@@ -59,7 +59,7 @@ const Podcast = () => {
                   <ExternalLink size={20} />
                 </Button>
                 <p className="text-sm text-muted-foreground mt-4">
-                  Podcasten finns också på Apple Podcasts och andra podcastplattformar
+                  Podcasten kommer finnas också på Apple Podcasts och andra podcastplattformar
                 </p>
               </div>
             </CardContent>

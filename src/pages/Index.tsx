@@ -33,7 +33,7 @@ const Index = () => {
             Vetenskapliga artiklar inom psykologi
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Dagliga sammanfattningar av forskningsartiklar inom psykologi och KBT
+            Dagliga sammanfattningar av forskningsartiklar med inriktning mot tillämparhet inom terapeutisk behandling
           </p>
         </div>
         
