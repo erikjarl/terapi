@@ -13,12 +13,66 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [showShareMenu, setShowShareMenu] = useState(false);
 
+  // 🔹 Hjälpfunktion för att konvertera text till klickbara länkar
+  function linkify(text: string) {
+    const parts = text.split(/(https?:\/\/[^\s]+)/g);
+    return parts.map((part, i) => {
+      if (part.match(/^https?:\/\//)) {
+        return (
+          <a
+            key={i}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline break-words"
+          >
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
+  }
+
+  // 🔹 Hjälpfunktion för att fetstila rubriker och göra länkar klickbara
+  function renderSummaryWithBoldHeadings(text: string, isExpanded: boolean) {
+    const s = isExpanded ? text : text.slice(0, 200) + (text.length > 200 ? "..." : "");
+    const lines = s.split(/\r?\n/);
+
+    return lines.map((line, i) => {
+      const raw = line.trim().toLowerCase();
+
+      const isAI = raw === "ai-reflektion" || raw === "ai-reflektion:";
+      const isKalla = raw === "källa" || raw === "källa:" || raw === "källor" || raw === "källor:";
+
+      if (isAI)
+        return (
+          <p key={i} className="text-lg leading-relaxed text-foreground">
+            <strong>AI-reflektion</strong>
+          </p>
+        );
+      if (isKalla)
+        return (
+          <p key={i} className="text-lg leading-relaxed text-foreground">
+            <strong>{raw.startsWith("källor") ? "Källor" : "Källa"}</strong>
+          </p>
+        );
+
+      // 🟢 Annars: rendera stycket, men gör länkar klickbara
+      return (
+        <p key={i} className="text-lg leading-relaxed text-foreground break-words">
+          {linkify(line)}
+        </p>
+      );
+    });
+  }
+
   const shareUrl = `${window.location.origin}/article/${article.id}`;
-  
+
   const handleShare = (platform: string) => {
     const encodedUrl = encodeURIComponent(shareUrl);
     const encodedTitle = encodeURIComponent(article.title_sv ?? article.title);
-    
+
     const shareUrls: Record<string, string> = {
       facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
       twitter: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
@@ -52,7 +106,7 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
             >
               <Share2 size={20} />
             </Button>
-            
+
             {showShareMenu && (
               <div className="absolute right-0 top-full mt-2 bg-card border border-border rounded-lg shadow-medium p-2 space-y-1 z-10 animate-fade-in">
                 <Button
@@ -104,24 +158,20 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
           )}
           <div className="flex gap-2 flex-wrap">
             {article.tags?.map((tag) => (
-              <span
-                key={tag}
-                className="px-2 py-1 bg-muted rounded-md text-xs"
-              >
+              <span key={tag} className="px-2 py-1 bg-muted rounded-md text-xs">
                 {tag}
               </span>
             ))}
           </div>
         </div>
       </CardHeader>
+
       <CardContent>
         <div className="space-y-4">
           {article.summary && (
             <>
-              <p className="text-lg leading-relaxed text-foreground whitespace-pre-line">
-                {isExpanded ? article.summary : article.summary.slice(0, 200) + (article.summary.length > 200 ? "..." : "")}
-              </p>
-              
+              {renderSummaryWithBoldHeadings(article.summary, isExpanded)}
+
               {article.summary.length > 200 && (
                 <Button
                   onClick={() => setIsExpanded(!isExpanded)}
