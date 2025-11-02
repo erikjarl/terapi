@@ -4,6 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
+  base: "/terapi/",                   // ⬅️ viktig
   plugins: [react()],
   resolve: {
     alias: {
