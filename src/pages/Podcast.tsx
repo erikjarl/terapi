@@ -50,17 +50,21 @@ const Podcast = () => {
               </div>
 
               <div className="text-center">
-                <Button
-                  size="lg"
-                  className="gap-2"
-                  onClick={() => window.open("https://open.spotify.com", "_blank")}
-                >
-                  <span>Lyssna på Spotify</span>
-                  <ExternalLink size={20} />
-                </Button>
-                <p className="text-sm text-muted-foreground mt-4">
-                  Podcasten kommer finnas också på Apple Podcasts och andra podcastplattformar
-                </p>
+                <div className="flex justify-center mt-6">
+                    <a
+                      href="https://www.podbean.com/pw/pbblog-8ahi5-149a84f"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://pbcdn1.podbean.com/fs1/site/images/badges/w600_1.png"
+                        alt="app download"
+                        className="w-[150px] h-[56px] border-none"
+                      />
+                    </a>
+                  </div>
+
+
               </div>
             </CardContent>
           </Card>
