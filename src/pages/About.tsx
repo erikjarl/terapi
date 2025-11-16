@@ -25,16 +25,14 @@ const About = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">Hur går det till?</h3>
               <p className="text-lg leading-relaxed text-foreground mb-6">
                 Varje dag hämtar sumra de senaste fulltexterna som finns gratis via PUBMED, sammanfattar
-                dessa med hjälp av generativ AI-teknik och publicerar detta som tillgängliga artiklar här på hemsidan.
+                dessa med hjälp av generativ AI-teknik och publicerar detta som tillgängliga artiklar här på hemsidan. Samma artiklar sammanfattas också i ett podcastformat tillgängligt där du hittar dina poddar.
                 Just nu är hemsidan under uppbyggnad och sökorden för insamlandet av artiklar kontinuerligt men ambitionen är
                 att fokusera urvalet på följande områden:
               </p>
               
               <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-foreground">
-                <li>Kognitiv beteendeterapi (KBT)</li>
-                <li>DBT, ACT</li>
-        
-                <li>Kliniska diagnoser vanliga vid terapeutiska behandling</li>
+                <li>Psykologisk behandling (ex. KBT, ACT, DBT, CFT m.m.)</li>
+                <li>Kliniska diagnoser vanliga vid psykologisk behandling</li>
                 <li>Studier av specifika terapeutiska interventioner</li>
 
             
@@ -47,8 +45,7 @@ const About = () => {
               <p className="text-lg leading-relaxed text-foreground mb-6">
                 Sumra är för alla som är intresserade av psykologi och mental hälsa - 
                 oavsett om du är terapeut, student, forskare eller bara allmänt nyfiken. 
-                Vi skriver på ett sätt som gör komplex forskning lättillgänglig utan att 
-                förlora den vetenskapliga rigorositeten.
+                Texterna och podcasten gör komplex forskning mer tillgänglig. Förhoppningen är att innehållet här blir en inkörsport till att läsa fulltexter i sin helhet och sprida kunskap.
               </p>
 
               <h3 className="text-2xl font-bold text-foreground mb-4">Framtiden</h3>
@@ -59,9 +56,10 @@ const About = () => {
                   minska risk för felaktigheter i den AI-genererade texten.
                 </li>
                 <li>Öka antalet publiceringar</li>
-                <li>Skapa upplästa forskningsartiklar som publiceras i podcast</li>
+            
                 <li>Utöka till fler ämnesområden </li>
                 <li>Mänsklig faktagranskning av innehållet som kan säkerställa 100% korrekt återgiven information</li>
+                <li>Möjligheten till personligt anpassade sökord</li>
 
               </p>
             </CardContent>
