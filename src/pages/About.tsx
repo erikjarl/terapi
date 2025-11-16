@@ -31,7 +31,7 @@ const About = () => {
               </p>
               
               <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-foreground">
-                <li>Psykologisk behandling (ex. KBT, ACT, DBT, CFT m.m.)</li>
+                <li>Psykologisk behandling (KBT, ACT, DBT, CFT m.m.)</li>
                 <li>Kliniska diagnoser vanliga vid psykologisk behandling</li>
                 <li>Studier av specifika terapeutiska interventioner</li>
 

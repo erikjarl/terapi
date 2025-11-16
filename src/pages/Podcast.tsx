@@ -51,7 +51,12 @@ const Podcast = () => {
 
               <div className="text-center">
                 <div className="flex justify-center mt-6">
-                    <a href="https://open.spotify.com/show/0Or2QYF5wB33IYGKXS2I4z"><img src="public/spotify-podcast-badge-blk-grn-330x80.png" alt="Länk til spotify" className="w-[175px] h-[45px] border-1px"/></a>
+                    <a href="https://open.spotify.com/show/0Or2QYF5wB33IYGKXS2I4z"><img
+  src={`${import.meta.env.BASE_URL}spotify-podcast-badge-blk-grn-330x80.png`}
+  alt="Länk till Spotify"
+  className="w-[175px] h-[45px] border"
+/>
+</a>
                 
           
                   </div>
@@ -65,7 +70,7 @@ const Podcast = () => {
                       <img
                         src="https://pbcdn1.podbean.com/fs1/site/images/badges/w600_1.png"
                         alt="app download"
-                        className="w-[150px] h-[56px] border-none"
+                        className="w-[175px] h-[60px] border-none"
                       />
                     </a>
                   </div>
