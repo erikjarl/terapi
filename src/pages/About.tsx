@@ -16,18 +16,17 @@ const About = () => {
             <CardContent className="prose prose-lg max-w-none pt-6">
               <h3 className="text-2xl font-bold text-foreground mb-4">Vad är Sumra?</h3>
               <p className="text-lg leading-relaxed text-foreground mb-6">
-                Sumra är en hemisda skapad med syfte att göra gratis fulltexter inom psykologi mer tillgängliga och begripliga.
-                Utgångspunkten är att det kan vara svårt att ta sig tiden att sätta sig in i den senaste forskningen kontinuerligt. Sumra möjliggör
-                att lära sig någonting nytt inom psykologi varje dag efter bara några minuters läsning.
+                Sumra är en hemisda skapad med syfte att göra vetenskapliga artiklar inom psykologi mer tillgängliga och begripliga.
+                I en hektisk vardag kan vara svårt att ta sig tiden att sätta sig in i den senaste forskningen kontinuerligt. Sumra möjliggör
+                att lära sig någonting nytt inom psykologi varje dag efter bara några minuters läsning eller lyssning.
             
               </p>
 
               <h3 className="text-2xl font-bold text-foreground mb-4">Hur går det till?</h3>
               <p className="text-lg leading-relaxed text-foreground mb-6">
-                Varje dag hämtar sumra de senaste fulltexterna som finns gratis via PUBMED, sammanfattar
-                dessa med hjälp av generativ AI-teknik och publicerar detta som tillgängliga artiklar här på hemsidan. Samma artiklar sammanfattas också i ett podcastformat tillgängligt där du hittar dina poddar.
-                Just nu är hemsidan under uppbyggnad och sökorden för insamlandet av artiklar kontinuerligt men ambitionen är
-                att fokusera urvalet på följande områden:
+                Varje dag hämtar Sumra de senaste fulltexterna som finns gratis via Pubmed, sammanfattar
+                dessa med hjälp av generativ AI-teknik och publicerar detta som tillgängliga artiklar här på hemsidan. Samma artiklar sammanfattas också i ett podcastformat och läggs upp där du hittar dina poddar.
+                I nuläget är Sumra kalibrerad till att samla in artiklar från de vetenskapliga tidskrifter med inriktning mot psykologisk forskning. Dock sker kontinuerligt ett arbete med att finjustera dessa sökord - och de AI-promptar som används för att sammanfatta artiklarna - för att skapa det bästa möjliga innehållet. I nuläget fångar siktar Sumra mot att skapa artiklar och podcasts inom följande:
               </p>
               
               <ul className="list-disc list-inside space-y-2 mb-6 text-lg text-foreground">
@@ -52,6 +51,7 @@ const About = () => {
               <p className="text-lg leading-relaxed text-foreground">
                 Detta är en betaversion av Sumra, och målet är att ständigt förbättra 
                 plattformen. Med ditt stöd via Patreon kan vi utveckla fler funktioner. Målsättningarna är att med stöd kunna utveckla:
+                <br />
                 <li>Uppgradera till mer avancerad AI-språkmodell för att förbättra textinnehåll och ytterligare
                   minska risk för felaktigheter i den AI-genererade texten.
                 </li>
@@ -59,7 +59,7 @@ const About = () => {
             
                 <li>Utöka till fler ämnesområden </li>
                 <li>Mänsklig faktagranskning av innehållet som kan säkerställa 100% korrekt återgiven information</li>
-                <li>Möjligheten till personligt anpassade sökord</li>
+                <li>Personliga nyhetsbrev där du prenumerar på de sökord på Pubmed du vill ha sammanfattningar på - skickas till din mejl flera gånger i veckan</li>
 
               </p>
             </CardContent>
