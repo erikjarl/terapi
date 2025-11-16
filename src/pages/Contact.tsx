@@ -38,14 +38,7 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-3">
-                    <Button
-                      variant="outline"
-                      className="w-full md:w-auto gap-2 justify-center"
-                      onClick={() => window.location.href = "mailto:erik.jarl@hotmail.com"}
-                    >
-                      <Mail size={20} />
-                      Mejla mig!
-                    </Button>
+                
                     
                     <Button
                       variant="outline"
