@@ -23,8 +23,8 @@ const Podcast = () => {
             <CardContent className="pt-6">
               <p className="text-lg leading-relaxed text-foreground mb-6">
                 Vill du hellre lyssna på artiklar än att läsa dem? Flera våra artikelsammanfattningar 
-                kommer inom kort finns tillgängliga som podcastavsnitt på Spotify. Perfekt för dig som vill ta 
-                del av den senaste forskningen under promenaden, på gymmet eller på väg till jobbet.
+                finns tillgängliga som podcastavsnitt på Spotify. Jämfört med artiklarna här på sumra.se är podcasten utformade som en dialog av två AI-värdar som diskuterar den aktuella artikeln. Perfekt för dig som vill ta 
+                del av den senaste forskningen under promenaden, på gymmet eller på väg till jobbet. I nuläget används gemini text-to-speech - en talsyntes som ibland skapar felaktiga språkljud på svenska. Målsättningen på sikt är att kunna förbättra ljudkvalitén ytterligare med en bättre talsyntes.
               </p>
 
               <div className="bg-muted rounded-lg p-6 mb-6">
@@ -51,6 +51,12 @@ const Podcast = () => {
 
               <div className="text-center">
                 <div className="flex justify-center mt-6">
+                    <a href="https://open.spotify.com/show/0Or2QYF5wB33IYGKXS2I4z"><img src="public/spotify-podcast-badge-blk-grn-330x80.png" alt="Länk til spotify" className="w-[175px] h-[45px] border-1px"/></a>
+                
+          
+                  </div>
+                <div className="flex justify-center mt-2">
+                
                     <a
                       href="https://www.podbean.com/pw/pbblog-8ahi5-149a84f"
                       target="_blank"
