@@ -19,20 +19,20 @@ const Contact = () => {
               <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                 <div className="flex-shrink-0">
                   <div className="w-48 h-48 bg-gradient-primary rounded-full flex items-center justify-center text-white text-6xl font-bold shadow-strong">
-                    EJ
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQE67MuDgrsavQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707568506872?e=1764806400&v=beta&t=H8jL9YebnUrTz2uJm97Q-8wAbi6g_Vft4nUutM-t_Iw" alt="Erik Jarl" className="w-48 h-48 bg-gradient-primary rounded-full flex items-center justify-center text-white text-6xl font-bold shadow-strong" />
                   </div>
                 </div>
                 
                 <div className="flex-1 text-center md:text-left">
                   <h3 className="text-3xl font-bold mb-2 text-foreground">Erik Jarl</h3>
                   <p className="text-lg text-muted-foreground mb-6">
-                    Grundare & Redaktör
+                    Grundare
                   </p>
                   
                   <div className="prose prose-lg mb-6">
                     <p className="text-foreground leading-relaxed">
                       Har du frågor, förslag eller vill du bidra till Sumra? Jag hör gärna från dig! 
-                      ¨
+                      
                 
                     </p>
                   </div>
@@ -41,28 +41,23 @@ const Contact = () => {
                     <Button
                       variant="outline"
                       className="w-full md:w-auto gap-2 justify-center"
-                      onClick={() => window.location.href = "mailto:erik.jarl@psysum.se"}
+                      onClick={() => window.location.href = "mailto:erik.jarl@hotmail.com"}
                     >
                       <Mail size={20} />
-                      -
+                      Mejla mig!
                     </Button>
                     
                     <Button
                       variant="outline"
                       className="w-full md:w-auto gap-2 justify-center"
-                      onClick={() => window.open("https://www.linkedin.com", "_blank")}
+                      onClick={() => window.open("https://www.linkedin.com/in/erik-jarl-a81475121/", "_blank")}
                     >
                       <Linkedin size={20} />
                       LinkedIn
                     </Button>
                   </div>
 
-                  <div className="mt-8 p-4 bg-muted rounded-lg">
-                    <p className="text-sm text-foreground">
-                      <strong>Svarstid:</strong> Jag strävar efter att svara på alla meddelanden 
-                      inom 48 timmar. 
-                    </p>
-                  </div>
+                  
                 </div>
               </div>
             </CardContent>
