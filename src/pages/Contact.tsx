@@ -26,9 +26,9 @@ const Contact = () => {
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 md:w-40 md:h-40 bg-gradient-primary rounded-full flex items-center justify-center text-white shadow-strong overflow-hidden">
                     <img
-                      src="/favicon.ico"
-                      alt="Sumra"
-                      className="w-full h-full object-cover"
+                      src="/mail-icon.svg"
+                      alt="Mail"
+                      className="w-full h-full object-contain p-4"
                     />
                   </div>
                 </div>

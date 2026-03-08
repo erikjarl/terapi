@@ -22,29 +22,23 @@ const Podcast = () => {
           <Card className="shadow-medium">
             <CardContent className="pt-6">
               <p className="text-lg leading-relaxed text-foreground mb-6">
-                Vill du hellre lyssna på artiklar än att läsa dem? Flera våra artikelsammanfattningar 
-                finns tillgängliga som podcastavsnitt på Spotify. Jämfört med artiklarna här på sumra.se är podcasten utformade som en dialog av två AI-värdar som diskuterar den aktuella artikeln. Perfekt för dig som vill ta 
-                del av den senaste forskningen under promenaden, på gymmet eller på väg till jobbet. I nuläget används gemini text-to-speech - en talsyntes som ibland skapar felaktiga språkljud på svenska. Målsättningen på sikt är att kunna förbättra ljudkvalitén ytterligare med en bättre talsyntes.
+                För dem som föredrar att lyssna istället för att läsa finns artikelsammanfattningar tillgängliga som podcastavsnitt på Spotify. Podcasten är utformad som en dialog mellan två AI-värdar som diskuterar och återger innehållet i artiklarna. Formatet lämpar sig för lyssning under promenader, träning eller andra aktiviteter där läsning inte är möjligt. För närvarande används Gemini text-to-speech, vilket kan resultera i felaktiga uttal på svenska. Målsättningen är att förbättra ljudkvaliteten genom att införa en mer avancerad talsyntes.
               </p>
 
               <div className="bg-muted rounded-lg p-6 mb-6">
-                <h3 className="text-xl font-bold mb-3 text-foreground">Varför lyssna?</h3>
+                <h3 className="text-xl font-bold mb-3 text-foreground">Information</h3>
                 <ul className="space-y-2 text-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>Samma högkvalitativa innehåll som på hemsidan</span>
+                    <span>Avsnitt publiceras dagligen</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>Nya avsnitt publiceras dagligen</span>
+                    <span>Formatet är 5–10 minuter, avsett för korta lyssningspass</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>Perfekt längd för kortare lyssningsstunder (5-10 minuter)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span>Hög kvalitativ inläsning med tydligt fokus på innehållet</span>
+                    <span>Podcasten är en dialog mellan två AI-värdar som diskuterar och återger artiklarna</span>
                   </li>
                 </ul>
               </div>

@@ -21,10 +21,16 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border shadow-soft">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="relative inline-block">
             <h1 className="text-2xl md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               sumra.se
             </h1>
+            <span
+              className="absolute right-0 top-full mt-[-4px] text-xs font-bold italic text-gray-800 dark:text-gray-300"
+              style={{ fontFamily: '"Comic Sans MS", "Comic Sans", cursive' }}
+            >
+              beta
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
